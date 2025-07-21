@@ -1,0 +1,44 @@
+[
+    {
+        "capa": "Aplicacion - 7",
+        "info": "Capa de abstracción que abarca los protocolos que permiten la comunicación de extremo a extremo entre aplicaciones. Se encarga de proporcionar servicios a las aplicaciones para separar la comunicación de red entre procesos en diferentes equipos. Es la capa más cercana al usuario.",
+        "protocolos": ["HTTP", " RTP", " SMTP", " FTP", " SSH", " Telnet", " SIP", " RDP", " IRC", " SNMP", " NNTP", " POP3", " IMAP", " BitTorrent", " DNS", " ..."]
+
+    },
+    {
+        "capa": "Prestacion - 6",
+        "info": "Es responsable de entregar y formatear la información a la capa de aplicación para su posterior procesamiento o presentación. También es responsable de la compresión y el cifrado de datos.",
+        "protocolos": ["XDR", " TLS", " ..."]
+
+    },
+    {
+        "capa": "Sesion - 5",
+        "info": "Gestiona los procesos que controlan la transferencia de datos, la gestión de errores y la gestión de registros de transmisión. Es responsable de coordinar el flujo de datos entre nodos. Implementa reglas para sincronizar el intercambio de mensajes y determinar los procedimientos a seguir en caso de fallos.",
+        "protocolos": ["NetBIOS", " ..."]
+
+    },
+    {
+        "capa": "Transporte - 4",
+        "info": "Se encarga de transferir datos entre dos máquinas, independientemente de la aplicación utilizada y del tipo, topología o configuración de las redes físicas existentes entre ellas. \rReúne protocolos de transporte de extremo a extremo entre máquinas, es decir, una entidad (hardware/software) que utiliza los protocolos de esta capa solo se comunica con su entidad destino, sin comunicación con máquinas intermedias en la red, como puede ocurrir con las capas inferiores.",
+        "protocolos": ["NetBEUI", " TCP", " UDP", " SCTP", " DCCP", " RIP", " ..."]
+    
+    },
+    {
+        "capa": "Red - 3",
+        "info": "Su función principal es transportar paquetes entre sistemas finales en la red a través de tres funciones importantes:\r- Determinación de ruta: ruta elegida por los paquetes entre el origen y el destino, utilizando un algoritmo de enrutamiento;\r- Conmutación: Movimiento de paquetes entre los puertos de entrada y salida de los enrutadores;\r- Establecimiento de conexión: Algunas arquitecturas de red requieren el establecimiento de circuitos virtuales antes de la transmisión de datos.",
+        "protocolos": ["IP (IPv4, IPv6)", " IPsec", " ICMP", " ARP", " RARP", " NAT", " ..."]
+    
+    },
+    {
+        "capa": "Enlace - 2",
+        "info": "Esta capa detecta y, opcionalmente, corrige errores que puedan ocurrir en la capa física. Es responsable de la transmisión y recepción de tramas (delimitación) y del control de flujo.",
+        "protocolos": ["Ethernet", " IEEE 802.1Q", " HDLC", " Token ring", " FDDI", " PPP", " Switch", " Frame relay", " ATM", " ..."]
+    
+    },
+    {
+        "capa": "Fisica - 1",
+        "info": "Se refiere a los medios de conexión a través de los cuales viajarán los datos, como interfaces seriales o cables coaxiales.",
+        "protocolos": ["Modem", " 802.11 Wi-Fi RDIS", " RS-232", " EIA-422", " RS-449", " Bluetooth", " USB", " 10BASE-T", " 100BASE-TX", " ISDN", " SONET", " DSL", " ..."]
+    
+    }
+]
